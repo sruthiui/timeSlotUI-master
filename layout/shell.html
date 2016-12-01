@@ -1,0 +1,17 @@
+<div ng-controller="weatherMapController">
+
+	<span ng-repeat="slot in localStorage" ng-click="enterDetails($index)" ng-class="{red: slot.number}" class="time-slot">
+        {{ slot.title }}
+    </span>
+    <div class="abc" ng-if="isModalOpen == true">
+        <div>Name:
+        <input type="text" ng-model="name"></div>
+        <div>Contact No.
+            <input type="number" ng-model="number">
+        </div>
+        <div>
+            <button type="button" ng-click="save(name, number)" class="btn btn-error">Save!</button>
+        </div>
+    </div>
+
+</div>

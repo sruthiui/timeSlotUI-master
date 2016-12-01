@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+		<!-- Responsive Bootstrap CSS -->
+        <link rel="stylesheet" href="dist/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="dist/css/bootstrap.min.css">
+
+		<!-- Application specific Custom CSS -->
+        <link rel="stylesheet" href="dist/css/custom.css">
+
+    </head>
+    <body ng-app="weatherMapModule">
+        <div class="container">
+
+			<div ng-show="showLoader" class="loader">
+				<img ng-src="assets/img/loading2.gif" class="loaderImage"/>
+			</div>
+
+			<div>
+				<div data-ng-include="'layout/shell.html'"></div>
+			</div>
+
+			<!-- Vendor Scripts -->
+			<script src="dist/js/angular.min.js"></script>
+			<script src="dist/js/ui-bootstrap-tpls-0.12.0.min.js"></script>
+			<script src="dist/js/select.min.js"></script>
+
+			<!-- Bootstraping Application -->
+			<script src="modules/weatherMapModule.js"></script>
+
+			<!-- Application Services -->
+			<script src="services/weatherMapFactory.js"></script>
+
+			<!-- Application Controllers -->
+			<script src="controllers/weatherMapController.js"></script>
+
+        </div>
+    </body>
+</html>

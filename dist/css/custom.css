@@ -1,0 +1,26 @@
+.time-slot {
+    width: 50px;
+    border: 2px solid blue;
+    color: green;
+    margin: 15px;
+    line-height: 25px;
+}
+
+.abc {
+    height: 200px;
+    width: 350px;
+    border: 2px solid grey;
+    background-color: lightgrey;
+    position: fixed;
+    top: 40%;
+    left: 40%;
+    padding: 30px;
+}
+
+.red {
+    width: 50px;
+    border: 2px solid red;
+    color: green;
+    margin: 15px;
+    line-height: 25px;
+}
